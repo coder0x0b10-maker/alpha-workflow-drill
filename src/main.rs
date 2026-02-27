@@ -3,7 +3,7 @@ mod engine;
 use engine::BacktestEngine;
 
 fn main() {
-    println!("AlphaSignal Engine Test");
+    println!("AlphaSignal Engine Test - RSI Indicator");
     
     // Example data
     let prices = vec![
@@ -11,11 +11,13 @@ fn main() {
         46.28, 46.00, 46.03, 46.41, 46.22, 45.64, 46.03, 46.28, 46.28, 46.00, 46.03, 46.41, 46.22, 45.64
     ];
 
+    println!("Input prices: {:?}", prices);
     let engine = BacktestEngine::new(prices);
-    let rsi_val = engine.get_rsi(14);
+    let period = 14;
+    let rsi_val = engine.get_rsi(period);
 
     match rsi_val {
-        Some(val) => println!("Calculated RSI(14): {:.2}", val),
+        Some(val) => println!("Calculated RSI({}): {:.2}", period, val),
         None => println!("Not enough data for RSI calculation"),
     }
 }

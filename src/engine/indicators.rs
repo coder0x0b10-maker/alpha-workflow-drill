@@ -1,3 +1,11 @@
+/// Calculates the Relative Strength Index (RSI) using Wilder's smoothing method.
+///
+/// # Arguments
+/// * `prices` - A slice of price data (f64)
+/// * `period` - The RSI period (typically 14)
+///
+/// # Returns
+/// * `Option<f64>` - The RSI value if calculation is possible, otherwise None.
 pub fn calculate_rsi(prices: &[f64], period: usize) -> Option<f64> {
     if prices.len() <= period {
         return None;
