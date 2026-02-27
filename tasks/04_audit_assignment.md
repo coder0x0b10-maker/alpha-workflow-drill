@@ -3,6 +3,11 @@
 **Goal**: 審核 SPEC 與代碼質量，不需直接操作 PR closing。
 **Deliverable**: 在 TRACKING_ISSUE.md 中寫下審核意見，或通知茉茉批准的 PR 編號。
 
+**Environment Setup**:
+```bash
+export GH_CONFIG_DIR=~/.config/gh-liu-ha
+```
+
 **Procedure**:
 1. 定期檢查 GitHub Repo 的 `feat/drill-*` 分支是否已推送。
 2. 閱讀 `docs/RSI_SPEC.md` 是否完整。

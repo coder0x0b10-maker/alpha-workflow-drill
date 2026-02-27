@@ -5,9 +5,14 @@
 **Goal**: 在 UI 中添加 RSI 數值展示區塊。
 **Deliverable**:
 - 修改 `frontend/src/app/page.tsx`，在最下方新增一個 "Indicators" card。
-- Card 裡列出 "RSI: 71.23" (模擬數值)。
+- Card 裡列出 "RSI: 71.23"（模擬數值）。
 - 使用 Tailwind 樣式，保持與現有 UI 風格一致。
 **Deadline**: 1 小時內完成分支推送。
+
+**Environment Setup**:
+```bash
+export GH_CONFIG_DIR=~/.config/gh-ba-ha
+```
 
 **Instruction**:
 1. `git pull origin main`

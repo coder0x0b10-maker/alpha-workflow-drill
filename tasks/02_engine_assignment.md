@@ -9,6 +9,11 @@
 - 寫一個簡單測試 (`cargo test`) 驗證 RSI 計算正確性（使用已知數據）。
 **Deadline**: 2 小時內完成分支推送。
 
+**Environment Setup**:
+```bash
+export GH_CONFIG_DIR=~/.config/gh-er-ha
+```
+
 **Instruction**:
 1. `git pull origin main`
 2. `git checkout -b feat/drill-rsi-impl`
